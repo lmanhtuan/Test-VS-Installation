@@ -3,14 +3,18 @@
 
 #include "stdafx.h"
 #include <iostream>
+#include "Student.h"
 
 using namespace std;
 
 int _tmain(int argc, _TCHAR* argv[])
 {
-	cout << "Hello world";
-	int i;
-	cin >>i;
+	cout << "Enter infors;";
+	int i, a;
+	cin >>i >> a;
+	Student *st = new Student(i,a);
+	cout << "Id:" << st->getId();
+
 	return 0;
 }
 
